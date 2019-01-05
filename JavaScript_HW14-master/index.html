@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>UFO Sightings</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+      <div class="jumbotron"><aling="center"></aling>
+      <h1> 
+        <center> UFO Sightings</center>
+        <center><h4> Collection of eye-witness reports</h4></center>
+      </h1>
+      <p></p>
+      </div>
+      <form class = "form-inline">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <input type="text" class="form-control" id="datetime" placeholder="Datetime (M/D/YYYY)">
+              <a id="search" class="btn btn-default">Search</a>
+            </div>
+            <div class="form-group2">
+                <input type="text" class="form-control" id="city" placeholder="City">
+                <a id="citysearch" class="btn btn-default">Search</a>
+            </div>
+            <div class="form-group3">
+                <input type="text" class="form-control" id="state" placeholder="State (ie. IL)">
+                <a id="statesearch" class="btn btn-default">Search</a>
+            </div>
+            <div class="form-group4">
+                <input type="text" class="form-control" id="country" placeholder="Country">
+                <a id="countrysearch" class="btn btn-default">Search</a>
+            </div>
+            <div class="form-group5">
+                <input type="text" class="form-control" id="shape" placeholder="Shape">
+                <a id="shapesearch" class="btn btn-default">Search</a>
+            </div>
+          </div>
+        </div>
+      </form>
+</div> 
+
+<div class="container-fluid">
+ <!-- new row  -->
+ <div class="tableContainer">
+        <div class="col-md-12">
+            
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Country</th>
+                <th>Shape</th>
+                <th>Duration</th>
+                <th>Comments</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+</div>
+<script src="https://d3js.org/d3.v5.min.js"></script>                
+<script src="Data/data.js" type="text/javascript"></script>
+<script src="js_done.js" type="text/javascript"></script>
+</body>
+
+</html>
